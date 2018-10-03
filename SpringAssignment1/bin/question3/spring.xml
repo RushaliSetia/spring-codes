@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+	<bean id="employee" class="question3.Employee">
+		<constructor-arg name="eid" value="102"></constructor-arg>
+		<constructor-arg name="name" value="Rushali"></constructor-arg>
+		<constructor-arg name="dept" ref="department"></constructor-arg>
+	</bean>
+	<bean id="department" class="question3.Department">
+		<constructor-arg name="deptName" value="IT"></constructor-arg>
+		<constructor-arg name="deptLoc" value="Noida"></constructor-arg>
+	</bean>
+</beans>
