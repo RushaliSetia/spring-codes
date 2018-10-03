@@ -1,0 +1,2 @@
+BootCamp8/172.18.70.174 [Wed Sep 05 12:51:53 IST 2018][Product [pId=103, productName=LENOVO-Laptop, productCost=25000, qualityInHand=30]]
+BootCamp8/172.18.70.174 [Wed Sep 05 13:06:34 IST 2018][Product [pId=104, productName=APPLE, productCost=120000, qualityInHand=12]]
