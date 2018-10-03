@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	Location="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="password" value="hr" />
+		<property name="username" value="hr" />
+	</bean>
+	<bean class="com.infy.model.Customer" id="customer1">
+		<constructor-arg name="cid" value="101" />
+		<constructor-arg name="name" value="Mike" />
+		<constructor-arg name="age" value="24" />
+	</bean>
+
+	<bean class="com.infy.model.Customer" id="customer2">
+		<constructor-arg name="cid" value="102" />
+		<constructor-arg name="name" value="Nick" />
+		<constructor-arg name="age" value="31" />
+	</bean>
+
+	<bean class="com.infy.model.Customer" id="customer3">
+		<constructor-arg name="cid" value="103" />
+		<constructor-arg name="name" value="Max" />
+		<constructor-arg name="age" value="45" />
+	</bean>
+
+	<bean class="com.infy.model.Customer" id="customer4">
+		<constructor-arg name="cid" value="104" />
+		<constructor-arg name="name" value="Kyle" />
+		<constructor-arg name="age" value="55" />
+	</bean>
+
+	<bean class="com.infy.utility.Connector" id="connector"></bean>
+</beans>
