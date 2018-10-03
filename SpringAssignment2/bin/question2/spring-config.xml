@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="club" class="question2.Club" autowire="byName">
+	    <constructor-arg name="cId" value="101" type="int"/>
+	    <constructor-arg name="name" value="BlakOut"/>
+	    <constructor-arg name="owner" value="Deepak Sharma"/>
+	</bean>
+	
+	<bean id="player" class="question2.Player">
+	    <constructor-arg name="pId" value="1" type="int"/>
+	    <constructor-arg name="name" value="Deepak Kakra"/>
+	    <constructor-arg name="pay" value="2000.0"/>
+	</bean>
+    
+</beans>
