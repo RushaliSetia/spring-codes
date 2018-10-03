@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="employee" class="com.mdel.Employee">
+		<constructor-arg name="eid" value="100" />
+		<constructor-arg name="name" value="Mike" />
+		<constructor-arg name="salary" value="1899.99" />
+	</bean>
+	<bean id="address" class="com.mdel.Address">
+		<constructor-arg name="city" value="noida" />
+		<constructor-arg name="state" value="UP" />
+	</bean>
+	<bean id="employeeBean" class="com.core.collection.EmployeeBean">
+		<constructor-arg name="maps" ref="" />
+
+	</bean>
+</beans>
+	
